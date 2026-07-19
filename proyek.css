@@ -59,6 +59,12 @@ nav {
     transition: color 0.3s ease;
 }
 
+.nav img{
+    height: 40px;
+    width: auto;
+    margin: center;
+}
+
 .nav-links a:hover {
     color: var(--uchiha-red);
 }
