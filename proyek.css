@@ -191,3 +191,25 @@ footer {
     nav { padding: 20px; flex-direction: column; gap: 15px; }
     .nav-links { gap: 15px; }
 }
+/* 1. Kontainer utama */
+.hero-section {
+    position: relative; /* Penting untuk menempatkan elemen di dalamnya */
+    width: 100%;
+    height: 400px; /* Sesuaikan tinggi bagian hero Anda */
+    display: flex;
+    justify-content: center; /* Pusatkan konten */
+    align-items: center;
+    overflow: hidden; /* Supaya gambar tidak keluar batas */
+}
+
+/* 2. Aturan untuk Gambar GIF (Rinnegan) */
+.hero-bg-gif {
+    position: absolute; /* Supaya bisa melayang bebas di dalam kontainer */
+    top: 0;
+    left: 0;
+    width: 100%; /* Gambar memenuhi kontainer */
+    height: 100%;
+    object-fit: cover; /* Gambar menyesuaikan area tanpa gepeng */
+    z-index: -1; /* Ini kuncinya! Nilai negatif mendorong gambar ke lapisan paling belakang */
+    opacity: 0.5; /* Opsional: Transparansi agar teks lebih menonjol */
+}
